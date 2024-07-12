@@ -11,7 +11,7 @@ bot.start((ctx) => ctx.reply("Xabar yuboring"));
 bot.on(message(), async (ctx) => {
 
   const replyData = ctx.message
-  console.log(ctx)
+  
   const replyDataJson = JSON.stringify(replyData, null, 2);
 
   await ctx.reply(`\`\`\`json\n${replyDataJson}\n\`\`\``, { parse_mode: 'Markdown' });
